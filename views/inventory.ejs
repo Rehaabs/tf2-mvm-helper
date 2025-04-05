@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TF2 MvM Helper</title>
+  </head>
+  <body>
+    <h1>Welcome, <%= user.displayName %>!</h1>
+    <h2>Your TF2 Inventory:</h2>
+    <ul>
+      <% inventory.forEach(item => { %>
+      <li>Item ID: <%= item.id %>, Defindex: <%= item.defindex %></li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
